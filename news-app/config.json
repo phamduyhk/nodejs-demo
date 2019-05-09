@@ -1,0 +1,5 @@
+{
+    "connectionString": "mongodb://phamduy:cactus95@ds151596.mlab.com:51596/news-app",
+    "apiUrl": "http://localhost:3000/api",
+    "secret": "REPLACE THIS WITH YOUR OWN SECRET, IT CAN BE ANY STRING",
+}

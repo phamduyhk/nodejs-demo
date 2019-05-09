@@ -1,6 +1,6 @@
 const path = require('path')
 const express = require('express')
-
+var config = require('config.json')
 
 const app = express()
 

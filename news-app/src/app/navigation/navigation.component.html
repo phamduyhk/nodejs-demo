@@ -1,0 +1,27 @@
+<mat-toolbar color="primary">
+  <!-- <mat-nav-list>
+    <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+    <button mat-button [matMenuTriggerFor]="menu2">Menu 2</button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>Item 1</button>
+      <button mat-menu-item>Item 2</button>
+    </mat-menu>
+  </mat-nav-list> -->
+
+  <mat-toolbar-row>
+    <mat-icon class="icon">score</mat-icon>
+    <button mat-button [matMenuTriggerFor]="home">HOME</button>
+    <button mat-button>Change</button>
+    <button mat-button>About</button>
+    <span class="space"></span>
+    <button mat-button *ngIf="hidden" matSuffix mat-icon-button (click)="hidden = !hidden">
+      <mat-icon>search</mat-icon>
+    </button>
+    <mat-form-field *ngIf="!hidden" class="search-form" style="box-align: left;">
+      <input matInput type="text" [(ngModel)]="searchStr" placeholder="Search">
+    </mat-form-field>
+    <button mat-button *ngIf="!hidden" matSuffix mat-icon-button (click)="hidden = !hidden">
+      <mat-icon>close</mat-icon>
+    </button>
+  </mat-toolbar-row>
+</mat-toolbar>
